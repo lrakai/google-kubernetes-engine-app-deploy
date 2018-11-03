@@ -7,3 +7,6 @@ resources:
   type: student-role.jinja
 - name: lab
   type: deployment.jinja
+  properties:
+    zone: us-central1-f
+    k8sVersion: '1.11'
