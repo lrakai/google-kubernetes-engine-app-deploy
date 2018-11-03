@@ -1,0 +1,9 @@
+imports:
+- path: student-role.jinja
+- path: deployment.jinja
+
+resources:
+- name: student-role
+  type: student-role.jinja
+- name: lab
+  type: deployment.jinja
