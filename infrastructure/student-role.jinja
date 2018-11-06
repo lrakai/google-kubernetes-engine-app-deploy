@@ -11,7 +11,6 @@ resources:
       includedPermissions:
         # Read-only permissions
         - resourcemanager.projects.get # Needed for Console views
-        - resourcemanager.projects.list # Needed for Console views
         - compute.projects.get # Start needed for GKE Console views
         - servicemanagement.services.check 
         - servicemanagement.services.get
@@ -148,8 +147,6 @@ resources:
         - compute.zoneOperations.list
         - compute.zones.get
         - compute.zones.list
-        - resourcemanager.projects.get
-        - resourcemanager.projects.list
         - serviceusage.quotas.get
         - serviceusage.services.get
         - serviceusage.services.list # End compute viewer
