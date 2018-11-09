@@ -280,3 +280,134 @@ resources:
         - monitoring.uptimeCheckConfigs.get
         - monitoring.uptimeCheckConfigs.list
         - stackdriver.projects.get # End monitoring viewer
+        - container.deployments.create # Begin GKE write permissions
+        - container.deployments.delete
+        - container.deployments.getScale
+        - container.deployments.rollback
+        - container.deployments.update
+        - container.deployments.updateScale
+        - container.deployments.updateStatus
+        - container.endpoints.create
+        - container.endpoints.delete
+        - container.endpoints.update
+        - container.horizontalPodAutoscalers.create
+        - container.horizontalPodAutoscalers.delete
+        - container.horizontalPodAutoscalers.update
+        - container.horizontalPodAutoscalers.updateStatus
+        - container.ingresses.create
+        - container.ingresses.delete
+        - container.ingresses.update
+        - container.ingresses.updateStatus
+        - container.namespaces.create
+        - container.namespaces.delete
+        - container.namespaces.update
+        - container.persistentVolumeClaims.create
+        - container.persistentVolumeClaims.delete
+        - container.persistentVolumeClaims.update
+        - container.persistentVolumeClaims.updateStatus
+        - container.persistentVolumes.create
+        - container.persistentVolumes.delete
+        - container.persistentVolumes.update
+        - container.persistentVolumes.updateStatus
+        - container.pods.attach
+        - container.pods.create
+        - container.pods.delete
+        - container.pods.evict
+        - container.pods.exec
+        - container.pods.getLogs
+        - container.pods.portForward
+        - container.pods.proxy
+        - container.pods.update
+        - container.pods.updateStatus
+        - container.secrets.create
+        - container.secrets.delete
+        - container.secrets.update
+        - container.serviceAccounts.create
+        - container.serviceAccounts.delete
+        - container.serviceAccounts.update
+        - container.services.create
+        - container.services.delete
+        - container.services.proxy
+        - container.services.update
+        - container.services.updateStatus
+        - container.statefulSets.create
+        - container.statefulSets.delete
+        - container.statefulSets.getScale
+        - container.statefulSets.update
+        - container.statefulSets.updateScale
+        - container.statefulSets.updateStatus 
+        - container.certificateSigningRequests.approve
+        - container.certificateSigningRequests.create
+        - container.certificateSigningRequests.delete
+        - container.certificateSigningRequests.update
+        - container.certificateSigningRequests.updateStatus
+        - container.configMaps.create
+        - container.configMaps.delete
+        - container.configMaps.update
+        - container.cronJobs.create
+        - container.cronJobs.delete
+        - container.cronJobs.update
+        - container.cronJobs.updateStatus
+        - container.customResourceDefinitions.create
+        - container.customResourceDefinitions.delete
+        - container.customResourceDefinitions.update
+        - container.customResourceDefinitions.updateStatus
+        - container.daemonSets.create
+        - container.daemonSets.delete
+        - container.daemonSets.update
+        - container.daemonSets.updateStatus
+        - container.events.create
+        - container.events.delete
+        - container.events.update
+        - container.jobs.create
+        - container.jobs.delete
+        - container.jobs.update
+        - container.jobs.updateStatus
+        - container.limitRanges.create
+        - container.limitRanges.delete
+        - container.limitRanges.update
+        - container.namespaces.updateStatus
+        - container.networkPolicies.create
+        - container.networkPolicies.delete
+        - container.networkPolicies.update
+        - container.podDisruptionBudgets.create
+        - container.podDisruptionBudgets.delete
+        - container.podDisruptionBudgets.update
+        - container.podDisruptionBudgets.updateStatus
+        - container.podSecurityPolicies.create
+        - container.podSecurityPolicies.delete
+        - container.podSecurityPolicies.update
+        - container.podSecurityPolicies.use
+        - container.podTemplates.create
+        - container.podTemplates.delete
+        - container.podTemplates.update
+        - container.replicaSets.create
+        - container.replicaSets.delete
+        - container.replicaSets.update
+        - container.replicaSets.updateScale
+        - container.replicaSets.updateStatus
+        - container.replicationControllers.create
+        - container.replicationControllers.delete
+        - container.replicationControllers.update
+        - container.replicationControllers.updateScale
+        - container.replicationControllers.updateStatus
+        - container.resourceQuotas.create
+        - container.resourceQuotas.delete
+        - container.resourceQuotas.update
+        - container.resourceQuotas.updateStatus
+        - container.storageClasses.create
+        - container.storageClasses.delete
+        - container.storageClasses.update
+        - container.clusterRoles.bind # Needed for click to deploy
+        - container.clusterRoles.create # Needed for click to deploy
+        - container.clusterRoles.delete # Needed for click to deploy
+        - container.clusterRoles.update # Needed for click to deploy
+        - container.clusterRoleBindings.create # Needed for click to deploy
+        - container.clusterRoleBindings.delete # Needed for click to deploy
+        - container.clusterRoleBindings.update # Needed for click to deploy
+        - container.thirdPartyObjects.create # Needed for click to deploy
+        - container.thirdPartyObjects.delete # Needed for click to deploy
+        - container.thirdPartyObjects.update # Needed for click to deploy
+        - container.roleBindings.create # Needed for click to deploy
+        - container.roleBindings.delete # Needed for click to deploy
+        - container.roleBindings.update # Needed for click to deploy # End GKE write permissions
