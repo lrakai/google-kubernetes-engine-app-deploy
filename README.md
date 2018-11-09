@@ -70,7 +70,39 @@ Demonstration of deploying an application in Google Cloud using Google Kuberente
 
 1. Start a Google Cloud Shell session.
 
-1. 
+1. Open the GKE section in the Cloud Console. Explore the different sections while waiting for the cluster to provision.
+
+1. Click __Connect__ and run the provided command in Cloud Shell to install the kubeconfig configuration for `kubectl` to connect to the cluster.
+
+1. Deploy a game application with the following command:
+
+    ```sh
+    kubectl run app --image=lrakai/tetris:1.0.0 --replicas=2 --labels="app=game"
+    # Allow access from the internet
+    kubectl expose deployment app --port=80 --target-port=80 --type=LoadBalancer
+    ```
+
+1. Output the external IP of the app service and navigate to the IP address to connect to the game:
+
+    ```sh
+    kubectl get service app
+    ```
+
+1. In the GKE Console, click __Marketplate__ in the left navigation pane.
+
+1. Choose WordPress, click __Configure__ followed by __Deploy__ to deploy WordPress.
+
+1. Allow external access by patching the WordPress service to be of `type: LoadBalancer`:
+
+    ```sh
+    kubectl patch svc "wordpress-1-wordpress-svc" --patch '{"spec": {"type": "LoadBalancer"}}'
+    ```
+
+1. Navigate to the external IP of the service to access WordPress:
+
+    ```sh
+    kubectl get service wordpress-1-wordpress-svc
+    ```
 
 ## Tearing Down
 
