@@ -2,6 +2,8 @@
 
 Demonstration of deploying an application in Google Cloud using Google Kuberentes Engine (GKE).
 
+![Final Environment](https://user-images.githubusercontent.com/3911650/48246112-53d23d00-e3ab-11e8-9e80-46c6366e0acc.png)
+
 ## Getting Started
 
 1. Ensure the Following APIs are enabled (enable with gcloud services enable [service]):
