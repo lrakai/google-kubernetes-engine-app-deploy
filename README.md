@@ -90,6 +90,13 @@ Demonstration of deploying an application in Google Cloud using Google Kuberente
     kubectl get service app
     ```
 
+1. Bind the `cluster-admin` role to the user to allow marketplace deployments:
+
+    ```sh
+    user=$(gcloud auth list --filter=status:ACTIVE --format="value(account)")
+    kubectl create clusterrolebinding admin-binding --clusterrole=cluster-admin --user=$user
+    ```
+    
 1. In the GKE Console, click __Marketplate__ in the left navigation pane.
 
 1. Choose WordPress, click __Configure__ followed by __Deploy__ to deploy WordPress.
